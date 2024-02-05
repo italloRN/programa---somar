@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim</title>
+</head>
+
+<body>
+    <h1>SOMA</h1>
+    <p>valor1</p> <input type="number" id="valor1" />
+    <p>valor2</p> <input type="number" id="valor2">
+    <button onclick="somar()">B</button>
+    <h2 id="resultado"></h2> <label>RESULTADO:</label>
+
+    <script>
+        function somar() {
+            num1 = document.getElementById("valor1").value;
+            console.log(num1)
+            num2 = document.getElementById("valor2").value;
+            console.log(num2)
+            soma = parseInt(num1)+parseInt(num2)
+            document.getElementById("resultado").innerHTML = soma;
+        }
+
+    </script>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        button{background-color: orange; color: aqua;;}
+        #resultado {
+            color:blueviolet;
+        }
+        label{color: rgb(87, 18, 199);}
+    </style>
+
+
+</body>
